@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Un regalo para Ozzy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Pantalla de pregunta -->
+  <div class="contenedor" id="acceso">
+    <h1>Antes de entrar…</h1>
+    <p class="intro">Una pregunta sencilla 💭</p>
+
+    <input type="text" id="respuesta" placeholder="Escribe aquí">
+    <button onclick="verificar()">Entrar</button>
+
+    <p id="error"></p>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="contenedor oculto" id="contenido">
+    <h1>Ozzy</h1>
+
+    <p class="intro">
+      Este es un pequeño regalo hecho con cariño.
+    </p>
+
+    <div id="mensaje"></div>
+
+    <button id="boton" onclick="mostrarMensaje()">Toca aquí</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

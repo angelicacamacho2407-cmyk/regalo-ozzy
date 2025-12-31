@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  background: linear-gradient(135deg, #fde2e4, #fadadd);
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: relative;
+}
+
+/* Detalles navideños sutiles */
+body::before {
+  content: "❄️";
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 18px;
+  opacity: 0.35;
+}
+
+body::after {
+  content: "🎄";
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  font-size: 18px;
+  opacity: 0.35;
+}
+
+.contenedor {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 24px;
+  text-align: center;
+  width: 330px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  color: #2f3e46;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #333;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#mensaje {
+  min-height: 60px;
+  margin-bottom: 25px;
+  font-size: 15px;
+  color: #444;
+  animation: aparecer 0.8s ease;
+}
+
+#boton {
+  margin-top: 10px;
+}
+
+#mensaje .feliz-navidad {
+  font-size: 26px;
+  font-weight: 600;
+  color: #b23a48;
+  animation: navidad 1.2s ease forwards;
+}
+
+#error {
+  color: #b23a48;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.oculto {
+  display: none;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes navidad {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
